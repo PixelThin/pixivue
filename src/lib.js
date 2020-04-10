@@ -6,3 +6,17 @@ import PCountrySelect from './components/p-country-select'
 import * as Transitions from './utilities/transitions'
 
 export { PSplit, PError, Transitions, PSection, PCountrySelect }
+export default {
+    install(Vue) {
+
+        // 3. inject some component options
+        Vue.mixin({
+            components: {
+                PSplit,
+                PError,
+                PSection,
+                PCountrySelect
+            }
+        })
+    }
+}
