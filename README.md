@@ -1,24 +1,20 @@
 # pixivue
 
-## Project setup
+## To add to your project
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+yarn install pixivue
 ```
 
-### Compiles and minifies for production
+## To Use:
 ```
-yarn build
+// main.js
+import Pixivue from 'pixivue
+Vue.use(Pixivue)
+```
+```
+// In your component
+<p-section> Stuff goes here </p-section>
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Peer Dependencies
+Pixivue components depend upon Vuetify and axios. You must add these as dependencies to your project.
