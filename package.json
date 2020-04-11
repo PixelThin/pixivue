@@ -10,10 +10,11 @@
   "module": "dist/pixivue.common.js",
   "unpkg": "dist/pixivue.umd.min.js",
   "browser": {
-    "./sfc": "src/my-component.vue"
+    "./sfc": "src/components/*"
   },
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "src/**/*"
   ],
   "dependencies": {
     "core-js": "^3.6.4"
