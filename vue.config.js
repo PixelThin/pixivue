@@ -1,7 +1,8 @@
 module.exports = {
     chainWebpack: config => {
         config.externals({
-            'axios': 'axios'
+            'axios': 'axios',
+            'vuetify': 'vuetify'
         })
     }
 }
