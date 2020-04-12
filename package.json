@@ -1,9 +1,10 @@
 {
   "name": "pixivue",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "yarn build:code && yarn build:copy",
+    "build": "echo No build step currently required",
+    "build:lib": "yarn build:code && yarn build:copy",
     "build:code": "vue-cli-service build --target lib --name pixivue src/lib.js",
     "build:copy": "copyfiles -f src/components/**/* dist/components",
     "lint": "vue-cli-service lint"
