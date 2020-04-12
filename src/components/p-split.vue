@@ -43,11 +43,11 @@
 }
 </style>
 <script lang="ts">
-import { Transitions } from "@/lib";
+import { fadeIn } from "../utilities/transitions";
 import Vue from "vue";
 export default Vue.extend({
   data: () => ({
-    fadeIn: Transitions.fadeIn
+    fadeIn
   }),
   computed: {
     textOrder() {
