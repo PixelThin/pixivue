@@ -1,6 +1,6 @@
 {
   "name": "pixivue",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn build:code && yarn build:copy",
@@ -8,14 +8,12 @@
     "build:copy": "copyfiles -f src/components/**/* dist/components",
     "lint": "vue-cli-service lint"
   },
-  "main": "dist/pixivue.umd.min.js",
-  "module": "dist/pixivue.common.js",
-  "unpkg": "dist/pixivue.umd.min.js",
+  "main": "src/index.js",
   "browser": {
-    "./sfc": "dist/components/*"
+    "./sfc": "src/components/*"
   },
   "files": [
-    "dist/**/*"
+    "src/**/*"
   ],
   "dependencies": {
     "copyfiles": "^2.2.0",
