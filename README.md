@@ -43,7 +43,13 @@ Vue.use(Pixivue)
 
 // In your SFC
 <template>
-    <p-section>Hello World</p-section>
+    <p-translucent-background
+      opacity=".3"
+      imageSource="https://cdn.pixabay.com/photo/2018/11/17/22/15/tree-3822149_960_720.jpg"
+      size="cover"
+    >
+      <div> My stuff goes here</div>
+    </p-translucent-background>
 </template>
 ```
 
