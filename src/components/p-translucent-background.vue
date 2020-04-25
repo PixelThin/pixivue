@@ -2,7 +2,7 @@
   <div class="position-relative width-100">
     <div
       class="background-image full-background"
-      :style="{backgroundImage: `url(${imageSource})`, opacity: opacity, backgroundPosition: position}"
+      :style="{backgroundImage: `url(${imageSource})`, opacity: opacity, backgroundSize: size}"
     ></div>
     <div class="background-container">
       <slot></slot>
@@ -35,7 +35,7 @@ export default Vue.extend({
   props: {
     opacity: {},
     imageSource: {},
-    position: {
+    size: {
       default: "cover"
     }
   }

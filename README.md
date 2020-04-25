@@ -14,6 +14,8 @@ yarn add pixivue
 * NOTE: Currently, this project **requires your app be bootstrap with the official vue-cli** due to its dependency on Vuetify. In most instance this isn't an issue and is transparent. If you would like this library to be exposed as a stand-alone library, please create an issue at https://github.com/PixelThin/pixivue/issues
 
 * NOTE: Pixivue components have peer dependencies on axios, Vuetify and vue-scroll-reveal
+
+* NOTE: As of Pixivue 1.0.0, p-sections are no longer supported. We recommend you use v-container instead.
 ---
 ### Scroll-reveal transitions:
 ```
