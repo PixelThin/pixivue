@@ -1,6 +1,7 @@
 <template>
   <v-row align="center" class="info-section d-flex">
     <div
+      v-if="image"
       class="d-md-none section-image background-image"
       :style="{ backgroundImage: `url(${image})`}"
     ></div>
@@ -13,6 +14,7 @@
       </div>
     </v-col>
     <v-col
+      v-if="image"
       class="section-image-col text-center background-image align-self-stretch d-none d-md-flex"
       :style="{ backgroundImage: `url(${image})`}"
       cols="12"
@@ -22,8 +24,6 @@
   </v-row>
 </template>
 <style scoped>
-/* @import "~vuetify/src/styles/styles.sass"; */
-
 .section-image {
   position: absolute;
   top: 0;

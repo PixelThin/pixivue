@@ -11,7 +11,7 @@ yarn add pixivue
 
 ## To Use:
 ---
-* NOTE: Currently, this project **requires your app be bootstrap with the official vue-cli** due to its dependency on Vuetify. In most instance this isn't an issue and is transparent. If you would like this library to be exposed as a stand-alone library, please create an issue at https://github.com/PixelThin/pixivue/issues
+* NOTE: Currently, this project **requires your app be bootstrapped with the official vue-cli** due to its dependency on Vuetify. In most instance this isn't an issue and is transparent. If you would like this library to be exposed as a stand-alone library, please create an issue at https://github.com/PixelThin/pixivue/issues
 
 * NOTE: Pixivue components have peer dependencies on axios, Vuetify and vue-scroll-reveal
 
@@ -51,6 +51,16 @@ Vue.use(Pixivue)
       <div> My stuff goes here</div>
     </p-translucent-background>
 </template>
+```
+### P-split example
+NOTE: If you are pulling the image URL from a CMS (e.g. WordPress), use null or undefined for the default value
+
+NOTE: Due to a bug in vue-scroll-reveal, changing the image source on the prop will not work correctly (see above for a
+      workaround when no image source is initially present)
+```
+  <p-split :image="cmsContent.pSplitImage1" right class="mt-12" title="Welcome">
+     Hello World
+  </p-split>
 ```
 
 ## Peer Dependencies
