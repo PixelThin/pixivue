@@ -30,7 +30,7 @@ export default {
   },
   computed: {
     youtubeUrls() {
-      return getUrls(this.video);
+      return getUrls(this.video.url);
     }
   },
   props: {
