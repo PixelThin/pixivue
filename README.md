@@ -62,6 +62,23 @@ NOTE: Due to a bug in vue-scroll-reveal, changing the image source on the prop w
      Hello World
   </p-split>
 ```
+### Embedded-video example
+NOTE: If you are pulling the image URL from a CMS (e.g. WordPress), use null or undefined for the default value
+
+NOTE: The embedded video component takes an object with properties title and url
+
+<template>
+   <embedded-video video="video"></embedded-video>
+   </template>
+   <script>
+   import embeddedVideo from 'pixivue'
+   export default{
+   data(){
+   video:{title:'title here',url:'https://youtu.be/dQw4w9WgXcQ'}
+   },
+   components:{ embeddedVideo }
+   }
+   </script>
 
 ## Peer Dependencies
 Pixivue components depend upon vue, vue-template-loader, babel, vuetify and axios. You must bootstrap your app with the vue-cli and Vuetify and Axios.
