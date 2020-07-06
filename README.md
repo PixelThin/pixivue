@@ -65,7 +65,7 @@ NOTE: Due to a bug in vue-scroll-reveal, changing the image source on the prop w
 ### Embedded-video example
 NOTE: If you are pulling the image URL from a CMS (e.g. WordPress), use null or undefined for the default value
 
-NOTE: The embedded video component takes an object with properties title and url
+NOTE: The embedded video component takes an object with properties title and URL
 ```
 
 <template>
