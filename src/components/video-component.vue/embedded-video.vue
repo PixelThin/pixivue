@@ -1,4 +1,5 @@
 <template>
+<!-- takes the shareable youtube link as video prop -->
   <div v-if="video" class="center">
     <!-- Lazy loading embedded video uses static thumbnail image until clicked by user -->
     <!-- This demonstrates a signifcant performance increase on page load, especially for many embedded videos-->
@@ -29,7 +30,7 @@ export default {
   },
   computed: {
     youtubeUrls() {
-      return getUrls(this.video.url);
+      return getUrls(this.video);
     }
   },
   props: {
