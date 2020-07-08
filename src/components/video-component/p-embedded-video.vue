@@ -10,7 +10,7 @@
       <!-- Embedded video loads and autoplays only after click-->
       <iframe v-if="isClicked" :src="url" frameborder="0" allowfullscreen></iframe>
     </div>
-    <slot>
+    <slot name="title">
     <h1 v-if="centered" class="text-center" v-html="video.title">
       <strong></strong>
     </h1>
