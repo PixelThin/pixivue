@@ -69,15 +69,15 @@ NOTE: The embedded video component takes an object with properties title and URL
 ```
 
 <template>
-   <embedded-video video="video"></embedded-video>
+   <p-embedded-video video="video"></p-embedded-video>
    </template>
    <script>
-   import embeddedVideo from 'pixivue'
+   import pEmbeddedVideo from 'pixivue'
    export default{
    data(){
    video:{title:'title here',url:'https://youtu.be/dQw4w9WgXcQ'}
    },
-   components:{ embeddedVideo }
+   components:{ pEmbeddedVideo }
    }
    </script>
 ```
