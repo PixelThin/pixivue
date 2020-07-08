@@ -8,7 +8,7 @@ export default {
     install(Vue) {
         Vue.mixin({
             components: {
-                pCountrySelect, pError, pSplit, pTranslucentBackground
+                pCountrySelect, pError, pSplit, pTranslucentBackground,embeddedVideo
             }
         })
     }
