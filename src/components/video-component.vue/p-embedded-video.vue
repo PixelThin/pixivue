@@ -16,11 +16,9 @@
     </h3>
   </div>
 </template>
-
 <script>
 import { getUrls } from "./youtube-data-extractor";
 export default {
-  name: "p-embedded-video",
   data: function() {
     return {
       url: "",
