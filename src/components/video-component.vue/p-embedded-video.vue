@@ -11,9 +11,12 @@
       <iframe v-if="isClicked" :src="url" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <h3 v-html="video.title">
+    <h3 v-if="centered" class="text-center" v-html="video.title">
       <strong></strong>
     </h3>
+     <h3 v-if="!centered" v-html="video.title">
+       <strong></strong>
+     </h3>
   </div>
 </template>
 <script>
@@ -32,7 +35,8 @@ export default {
   },
   props: {
     video: undefined,
-    showTitle: false
+    showTitle: false,
+    centered:false
   },
   methods: {
     click: function() {
