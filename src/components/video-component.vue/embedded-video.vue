@@ -20,7 +20,7 @@
 <script>
 import { getUrls } from "./youtube-data-extractor";
 export default {
-  name: "embeddedVideo",
+  name: "p-embedded-video",
   data: function() {
     return {
       url: "",
