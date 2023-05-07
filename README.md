@@ -91,3 +91,4 @@ Pixivue components depend upon vue, vue-template-loader, babel, vuetify and axio
 
 ## Version History
 1.1.8 - Adds support for YouTube live videos to the embedded-video component. Removes yarn.lock -- just use npm 
+1.1.9 - Minor update to resolve issue with some loaders.

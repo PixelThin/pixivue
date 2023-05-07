@@ -1,6 +1,6 @@
 {
   "name": "pixivue",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "echo This is a source-only package. No build step required"

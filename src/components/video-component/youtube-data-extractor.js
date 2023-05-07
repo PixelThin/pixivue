@@ -25,7 +25,7 @@ const thumbUrl = "https://i.ytimg.com/vi/";
 export function getUrls(youtubeShareUrl) {
   // Get the prefix and offset that match this YouTube link type
   const link = SUPPORTED_LINKS.find(
-    (l) => youtubeShareUrl?.indexOf(l.prefix) == 0
+    (l) => youtubeShareUrl && youtubeShareUrl.indexOf(l.prefix) == 0
   );
   if (link == undefined || link == null) {
     console.error(`Unknown link type: ${youtubeShareUrl}`);
