@@ -1,5 +1,10 @@
 # pixivue
 
+## To contribute
+**NOTE:** This is a source-only package. There is no build or compilation step. This package is merely a convenient way to bundle up source. The project using the package must have the appropriate dependencies installed (see the following sections)
+
+To update and test, do not build locally--use npm link with an application that installs this package to update and test. To publish, there is no build step -- just publish.
+
 ## To add to your project
 ```
 vue-cli create my-new-app
@@ -83,3 +88,6 @@ NOTE: The embedded video component takes an object with properties title and URL
 ```
 ## Peer Dependencies
 Pixivue components depend upon vue, vue-template-loader, babel, vuetify and axios. You must bootstrap your app with the vue-cli and Vuetify and Axios.
+
+## Version History
+1.1.8 - Adds support for YouTube live videos to the embedded-video component. Removes yarn.lock -- just use npm 
